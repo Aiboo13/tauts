@@ -1,10 +1,10 @@
-/* LoginForm.css */
+/* Login.css */
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #E9DFC3;
+  background-color: #EFEEEA;
   font-family: Arial, sans-serif;
 }
 
@@ -12,7 +12,7 @@
   width: 100%;
   max-width: 400px;
   padding: 30px;
-  background-color: #E9DFC3;
+  background-color: #EFEEEA;
   border-radius: 10px;
   text-align: center;
   
@@ -66,7 +66,7 @@
   text-align: start;
   color: gray;
   padding: 0.2rem;
-  background-color: #E9DFC3;
+  background-color: white;
   
 }
 
@@ -81,11 +81,11 @@ label{
   border-radius: 8px;
   font-size: 16px;
   box-sizing: border-box;
-  background-color: #f5eedc;
+  background-color: #EFEEEA;
 }
 
 .password-field {
-  background-color: #f5eedc;
+  background-color: #EFEEEA;
   color: #999;
 }
 
