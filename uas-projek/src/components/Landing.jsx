@@ -6,7 +6,7 @@ import ReactLogo from '../assets/react.svg';
 
 
 
-function LandingPage({goToLogin}) {
+function LandingPage({goToLogin, goToRegister}) {
   return (
     <>
     <div className='container-fluid'>
@@ -22,7 +22,7 @@ function LandingPage({goToLogin}) {
             </a>
           </div>
           <div className='button-register'>
-            <button  className="btn" style={{ border: 'none', boxShadow: 'none',color:'white'}}>regiter</button>
+            <button onClick={goToRegister} className="btn" style={{ border: 'none', boxShadow: 'none',color:'white'}}>regiter</button>
           </div>
           <div className='button-login' >
           <button onClick={goToLogin} className="btn" style={{ border: 'none', boxShadow: 'none'}}>login</button>
@@ -34,14 +34,14 @@ function LandingPage({goToLogin}) {
       <div className='text'>
         <p>Akses semua tautan</p>
         <p className='under'> dengan satu ketukan</p>
-        <button className='create-link' >buat tauts-mu</button>
+        <button className='create-link' onClick={goToLogin} >buat tauts-mu</button>
         </div>
         </div>
         <div className="col">
           <div className='inmain'>
             <div>
               <div className='header'><img src={ReactLogo} alt="" width="10%" height="10%"/>
-                <h3>User</h3><br />
+                <h3>User123#</h3><br />
                 <small>mobille devolover | cloud engginer</small>
               </div><br />
               <br /><br /><br /><br />

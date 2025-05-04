@@ -1,14 +1,17 @@
-
-import { BrowserRouter, Routers, Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from '../components/login.jsx';
-function App() {
+import Register from '../components/register.jsx';
+function Router() {
   return(
     <BrowserRouter>
-      <Routers>
+      <Router>
+        <Routes>
         <Router path="/login" element={<Login />} />
-      </Routers>
+        <Router path="/register" element={<Register />} />
+        </Routes>
+      </Router>
     </BrowserRouter>
   )
 }
 
-export default App;
+export default Router;
