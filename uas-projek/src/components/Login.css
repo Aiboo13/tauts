@@ -76,12 +76,15 @@ label{
 
 .input-field {
   width: 100%;
-  padding: 5px 15px;
-  border: 1px solid #ffffff00;
-  border-radius: 8px;
+  padding: auto;
+  border: 1px solid #00000000;
   font-size: 16px;
-  box-sizing: border-box;
   background-color: #EFEEEA;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .password-field {

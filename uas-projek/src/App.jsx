@@ -1,14 +1,19 @@
 import { useState } from 'react';
 import LandingPage from './components/landing';
 import Login from './components/login';
-
+import Register from './components/register';
 function App() {
-  const [Page, setPage] = useState('landing'); // huruf kecil
+  const [page, setPage] = useState('landing');
 
   return (
     <>
-      {Page === 'landing' && <LandingPage goToLogin={() => setPage('login')} />}
-      {Page === 'login' && <Login />}
+      {page === 'landing' && (<LandingPage
+          goToLogin={() => setPage('login')}
+          goToRegister={() => setPage('register')}
+        />
+      )}
+      {page === 'login' && <Login />}
+      {page === 'register' && <Register />}
     </>
   );
 }
