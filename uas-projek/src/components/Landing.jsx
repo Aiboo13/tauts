@@ -3,10 +3,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './Landing.css';
 import Logo from '../assets/LOGO.png';
 import ReactLogo from '../assets/react.svg';
+import { useNavigate } from 'react-router-dom';
 
 
 
-function LandingPage({goToLogin, goToRegister}) {
+function LandingPage() {
+  const navigate = useNavigate();
   return (
     <>
     <div className='container-fluid'>
@@ -22,10 +24,10 @@ function LandingPage({goToLogin, goToRegister}) {
             </a>
           </div>
           <div className='button-register'>
-            <button onClick={goToRegister} className="btn" style={{ border: 'none', boxShadow: 'none',color:'white'}}>regiter</button>
+            <button onClick={() => navigate('/register')} className="btn" style={{ border: 'none', boxShadow: 'none',color:'white'}}>regiter</button>
           </div>
           <div className='button-login' >
-          <button onClick={goToLogin} className="btn" style={{ border: 'none', boxShadow: 'none'}}>login</button>
+          <button onClick={() => navigate('/login')} className="btn" style={{ border: 'none', boxShadow: 'none'}}>login</button>
           </div>
         </nav>
         <div className="container text-center">
@@ -34,7 +36,7 @@ function LandingPage({goToLogin, goToRegister}) {
       <div className='text'>
         <p>Akses semua tautan</p>
         <p className='under'> dengan satu ketukan</p>
-        <button className='create-link' onClick={goToLogin} >buat tauts-mu</button>
+        <button className='create-link' onClick={() => navigate('/login')}>buat tauts-mu</button>
         </div>
         </div>
         <div className="col">

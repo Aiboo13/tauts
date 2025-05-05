@@ -1,17 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// routers/router.jsx
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LandingPage from '../components/Landing.jsx';
 import Login from '../components/login.jsx';
 import Register from '../components/register.jsx';
-function Router() {
-  return(
+
+function AppRouter() {
+  return (
     <BrowserRouter>
-      <Router>
-        <Routes>
-        <Router path="/login" element={<Login />} />
-        <Router path="/register" element={<Register />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default Router;
+export default AppRouter;
