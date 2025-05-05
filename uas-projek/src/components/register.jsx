@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 function Register() {
@@ -6,6 +7,7 @@ function Register() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -68,7 +70,7 @@ function Register() {
           <button type="submit" className="login-button">
             Login
           </button>
-          <small>sudah punya akun.? <a href="./login.jsx">masuk</a></small>
+          <small>sudah punya akun.? <button style={{border:'none', color:'blue', fontFamily:'Anton'}} onClick={() => navigate('/login')}>masuk</button></small>
         </form>
       </div>
     </div>

@@ -6,6 +6,7 @@ import './Login.css';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -49,6 +50,7 @@ function Login() {
             Login
           </button>
         </form>
+        <small>belum punya akun..? <button style={{border: 'none', color:'blue'}} onClick={()=> navigate('/register')}>daftar</button></small>
         </div>
     </div>
   );

@@ -31,7 +31,7 @@
 }
 
 .button-login:active{
-  background-color: #68B764;
+  background-color: #E9DFC3;
   color: #EFEEEA;
   border-radius: 2.3rem;
   -webkit-border-radius: 2.3rem;
@@ -46,6 +46,24 @@
   background-color: #222831;
 }
 
+.button-register:hover{
+  background-color: #E9DFC3;
+  color: #EFEEEA;
+  border-radius: 2.3rem;
+  -webkit-border-radius: 2.3rem;
+  -moz-border-radius: 2.3rem;
+  -ms-border-radius: 2.3rem;
+  -o-border-radius: 2.3rem;
+}
+.button-register:active{
+  background-color: #68B764;
+  color: #EFEEEA;
+  border-radius: 2.3rem;
+  -webkit-border-radius: 2.3rem;
+  -moz-border-radius: 2.3rem;
+  -ms-border-radius: 2.3rem;
+  -o-border-radius: 2.3rem;
+}
 .text{
   color: #000;
   font-size: 3rem;
