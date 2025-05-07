@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import './Login.css';
+import '../style/login.css'; // Pastikan untuk menyesuaikan path ini sesuai dengan struktur folder Anda
 
 function Login() {
   const [email, setEmail] = useState('');

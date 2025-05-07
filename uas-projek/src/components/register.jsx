@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Login.css';
-
+import '../style/login.css'
 function Register() {
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
@@ -41,7 +40,7 @@ function Register() {
             <input
               type="text"
               id="Unsername"
-              value={password}
+              value={username}
               onChange={(e) => setUsername(e.target.value)}
               className="input-field unsername-field"
             />

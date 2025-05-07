@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import './Landing.css';
-import Logo from '../assets/LOGO.png';
+import Logo from '../assets/logo (2).png';
 import ReactLogo from '../assets/react.svg';
 import { useNavigate } from 'react-router-dom';
+import '../style/Landing.css' // Pastikan untuk menyesuaikan path ini sesuai dengan struktur folder Anda
 
 
 
@@ -12,25 +12,20 @@ function LandingPage() {
   return (
     <>
     <div className='container-fluid'>
-        <nav className="navbar bg-body-tertiary" >
-          <div className="container" >
-            <a className="navbar-brand" href="#">
-              <img
-                src={Logo}
-                alt=""
-                width="40%"
-                height="40%"
-              />
+      <nav className="navbar bg-body-tertiary" >
+        <div className="container">
+          <a className="navbar-brand logo-wrap" href="#">
+            <img src={Logo} alt="TautsLogo" /><h1>tauts</h1>
             </a>
-          </div>
-          <div className='button-register'>
+            </div>
+            <div className='button-register'>
             <button onClick={() => navigate('/register')} className="btn" style={{ border: 'none', boxShadow: 'none',color:'white'}}>regiter</button>
           </div>
           <div className='button-login' >
           <button onClick={() => navigate('/login')} className="btn" style={{ border: 'none', boxShadow: 'none'}}>login</button>
           </div>
         </nav>
-        <div className="container text-center">
+        <div className="container-fluid text-center">
   <div  className="row mt-5">
     <div className="col-7">
       <div className='text'>
