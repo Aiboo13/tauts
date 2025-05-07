@@ -19,7 +19,7 @@ function LandingPage() {
             </a>
             </div>
             <div className='button-register'>
-            <button onClick={() => navigate('/register')} className="btn" style={{ border: 'none', boxShadow: 'none',color:'white'}}>regiter</button>
+            <button onClick={() => navigate('/register')} className="btn" style={{ border: 'none', boxShadow: 'none',color:'white'}}>register</button>
           </div>
           <div className='button-login' >
           <button onClick={() => navigate('/login')} className="btn" style={{ border: 'none', boxShadow: 'none'}}>login</button>

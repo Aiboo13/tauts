@@ -10,14 +10,11 @@ function Dashboard() {
   const [title, setTitle] = useState('');
   const [link, setLink] = useState('');
   const [links, setLinks] = useState([]); // State untuk daftar tautan
-
+  const Username = 'Sahid'; 
+  const Inisial =  Username.charAt(0).toUpperCase(); // Mengambil huruf pertama dari username dan mengubahnya menjadi huruf kapital
   const handleAddLink = () => {
     if (title && link) {
       setLinks([...links, { title, link }]); // Tambahkan tautan baru ke daftar
-      //  kenapa pakai titik 3
-      // karena kita mau menambahakan data baru ke dalam array yang sudah ada
-      // apa hubungan nya ..? jelaskan lebih lanjut
-      // titik 3 adalah spread operator yang digunakan untuk menyalin elemen-elemen dari array yang sudah ada
       setTitle(''); // Kosongkan input judul
       setLink(''); // Kosongkan input link
     }
@@ -41,7 +38,7 @@ function Dashboard() {
         <nav className="navbar bg-body-tertiary">
           <div className="container">
             <a className="navbar-brand logo-wrap" href="#">
-              <h1 className="profile" style={{ color: 'white' }}>S</h1>
+              <h1 className="profile" style={{ color: 'white' }}>{Inisial}</h1>
               <small>Sahidvespa</small>
             </a>
             <div>
