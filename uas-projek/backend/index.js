@@ -9,25 +9,16 @@ app.use(cors());
 app.use(express.json());
 const bcrypt = require('bcrypt');
 
-const res = await fetch('http://localhost:5000/register', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ username, email, password })
-});
-
-console.log('Respons backend:', res);
-const data = await res.json();
-console.log('Data dari backend:', data);
-
-
 // Register
 app.post('/register', async (req, res) => {
   const { username, email, password } = req.body;
   const created_t = new Date();
-  console.log('Data diterima:', req.body);
+  console.log('Data diterima:', req.body.username, req.body.email);
+
 
   if (!password) {
-    return res.status(400).json({ error: 'Password tidak boleh kosong' });
+    return res.status(400).json({error : "password tidak boleh kosong"})
+    // return res.status(400).json({ error: 'Password tidak boleh kosong' });
   }
 
   db.query('SELECT * FROM users WHERE email = ?', [email], (err, results) => {

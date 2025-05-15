@@ -1,0 +1,270 @@
+.navbar-brand {
+  margin-left: -4%;
+}
+
+.profile {
+  border: #c300ff;
+  display: flex;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #65b764;
+}
+
+.logo {
+  width: 50%;
+  height: 50%;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.logo-Share {
+  width: 2rem;
+}
+
+.Share {
+  padding: 0.5rem;
+  display: flex;
+  border-radius: 3rem;
+  justify-content: center;
+  width: 10%;
+  background-color: #efeeea;
+}
+
+.Share button {
+  background-color: #efeeea;
+  padding-left: 1rem;
+}
+
+.profile-inmain {
+  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border: 40px solid #7364b7;
+  background-color: #222831;
+  color: white;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.input {
+  width: 60%;
+  border: none; /* Menghilangkan border */
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+}
+
+/* Hapus border pada input */
+.card-input input {
+  border: none; /* Menghilangkan border */
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.submit .btn-add {
+  height: 7rem;
+  width: 7rem;
+  background-color: #7364b7;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.submit .btn-add:hover {
+  transform: scale(1.1);
+  background-color: #5a4ca7;
+}
+
+.input-group {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.input-group input {
+  flex: 1;
+}
+
+.btn-add {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #65b764; /* Warna hijau */
+  color: white;
+  font-size: 1.5rem;
+  border: none; /* Pastikan tombol tidak memiliki border */
+  border-radius: 50%; /* Bentuk lingkaran */
+  transition: transform 0.2s ease-in-out; /* Animasi hover */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Ubah kursor menjadi pointer */
+}
+
+.btn-add:hover {
+  transform: scale(1.1); /* Perbesar sedikit */
+  background-color: #57a556; /* Warna hijau lebih gelap */
+}
+
+.d-flex.align-items-center {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Jarak antar elemen */
+}
+
+/* Container untuk Add Link */
+.add-link-container {
+  border: 4px solid #000; /* Border hitam */
+  border-radius: 1rem; /* Sudut melengkung */
+  padding: 1.5rem; /* Ruang di dalam border */
+  background-color: #f4f4f4; /* Warna latar belakang */
+  text-align: left; /* Teks rata kiri */
+  width: 100%; /* Lebar penuh */
+  max-width: 500px; /* Maksimal lebar */
+  margin: 0 auto; /* Pusatkan elemen */
+}
+
+/* Judul Add Link */
+.add-link-title {
+  font-size: 1.2rem; /* Ukuran font */
+  font-weight: bold; /* Teks tebal */
+  margin-bottom: 1rem; /* Jarak bawah */
+  color: #000; /* Warna teks hitam */
+}
+
+/* Input untuk judul dan link */
+.input-title,
+.input-link {
+  width: 100%; /* Lebar penuh */
+  padding: 0.5rem; /* Ruang dalam */
+  margin-bottom: 0.5rem; /* Jarak bawah */
+  border: none; /* Hilangkan border */
+  border-radius: 0.5rem; /* Sudut melengkung */
+  background-color: #f0f0f0; /* Warna latar belakang */
+  font-size: 1rem; /* Ukuran font */
+  color: #333; /* Warna teks */
+}
+
+/* Gaya untuk item tautan */
+.link-item {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Tombol Edit */
+.btn-edit {
+  background-color: #ffc107; /* Warna kuning */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800; /* Warna kuning lebih gelap */
+}
+
+/* Tombol Remove */
+.btn-remove {
+  background-color: #dc3545; /* Warna merah */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-remove:hover {
+  background-color: #c82333; /* Warna merah lebih gelap */
+}
+
+/* Container untuk hasil tautan */
+.link-results {
+  border: 4px solid #00000000; /* Border hitam */
+  border-radius: 1rem; /* Sudut melengkung */
+  background-color: #f4f4f4; /* Warna latar belakang */
+  padding: 1rem; /* Ruang di dalam border */
+  text-align: left; /* Teks rata kiri */
+  width: 100%; /* Lebar penuh */
+  max-width: 500px; /* Maksimal lebar */
+  margin: 1rem auto; /* Jarak ke atas dan pusatkan elemen */
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+  .add-link-container {
+    padding: 1rem; /* Kurangi padding pada layar kecil */
+  }
+
+  .input-title,
+  .input-link {
+    font-size: 0.9rem; /* Kurangi ukuran font */
+  }
+
+  .btn-add {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.2rem; /* Kurangi ukuran tombol */
+  }
+
+  .link-results {
+    padding: 0.5rem; /* Kurangi padding pada hasil tautan */
+  }
+
+  .link-item {
+    padding: 0.8rem; /* Kurangi padding pada item tautan */
+  }
+}
+
+@media (max-width: 480px) {
+  .add-link-container {
+    padding: 0.8rem; /* Kurangi padding lebih lanjut pada layar sangat kecil */
+  }
+
+  .input-title,
+  .input-link {
+    font-size: 0.8rem; /* Kurangi ukuran font lebih lanjut */
+  }
+
+  .btn-add {
+    height: 1.8rem;
+    width: 1.8rem;
+    font-size: 1rem; /* Kurangi ukuran tombol lebih lanjut */
+  }
+
+  .link-results {
+    padding: 0.5rem; /* Kurangi padding lebih lanjut pada hasil tautan */
+  }
+
+  .link-item {
+    padding: 0.5rem; /* Kurangi padding lebih lanjut pada item tautan */
+  }
+}
+
+.card-input{
+  margin-left: 0.3rem;
+}
+
